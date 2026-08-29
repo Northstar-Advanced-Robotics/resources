@@ -22,6 +22,10 @@ Choose the setup that matches your workflow:
 
 ### Setting up Docker for VSCode
 
-
+smth using the `Setup` materials
 
 ### Setting up Docker for CLI
+
+Before specific instructions on how we use containers, install either [Docker](https://docs.docker.com/engine/install/) or [Podman](https://podman.io/docs/installation). 
+
+smth using the `Setup` materials
