@@ -1,23 +1,27 @@
-Before embarking on this journey, I want to outline what you are expected to have before following this tutorial:
+Before embarking on this journey, ensure you comply with following requirements:
 - Knowledge of how to open and use the terminal on your computer
-- A IDE or text editor you are comfortable with (ie. VSCode)
+- VS Code or, alternatively, a text editor you are comfortable with
 - [Git installed on your system](https://git-scm.com/install/) 
 - Basic knowledge of C++ programming and compilation
 
 ## Setting up SSH authentication
 
-All [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) on our repos use SSH URLs which require some setup that we will do below. The reason for this is that once the initial setup is complete, SSH links are advantageous, since no PAT is required.
+All [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) on our repositories use SSH URLs. SSH links are advantageous, since no personal access tokens (PATs) are required.
 
-Follow the [offical github tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) until "Test your connection step".
+Follow the [offical GitHub SSH tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) through the "Test your connection" step.
 
 ## Setting up Docker
 
-  Follow either the [vscode setup](#setting-up-docker-for-vscode) or the [cli workflow setup](#setting-up-docker-for-cli)
+We rely on containerized environments for maximum portability across operating systems and consistency across the team.
+Choose the setup that matches your workflow:
 
-  One can also use [podman](https://podman.io/) rather than docker, which is what I do. The main benefits being some saner defaults and increased security at the cost of it being a less standard tool. You might encounter slight differences from docker, but should generally be very similar.
+- [VS Code Workflow](#setting-up-docker-for-vscode)
+- [CLI Workflow](#setting-up-docker-for-cli)
+
+> **Note**: [Podman](https://podman.io/) is an alternative container engine with some key benefits (rootless by default, systemd integration). You are welcome to use Podman if you prefer, but Docker is the primary standard for this guide. I would recommend it in a Linux CLI workflow.
 
 ### Setting up Docker for VSCode
 
-    
+
 
 ### Setting up Docker for CLI
