@@ -22,16 +22,16 @@ Choose the setup that matches your workflow:
 
 ## Setting up Docker for VSCode
 
-### Install VS Code 
+### Installing VS Code 
 
-- If you don't already have VS Code instlled, install it for your os [here](https://code.visualstudio.com/Download?_exp_download=fb315fc982).
+- If you don't already have VS Code installed, install it for your os [here](https://code.visualstudio.com/Download?_exp_download=fb315fc982).
 
-### Install docker
+### Installing Docker
 
 - On windows or Mac OS install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 - On linux install the [Docker Engine](https://docs.docker.com/engine/install/).
 
-Once you have installed Docker check if its active by running `docker info` in a terminal. If that does not print "Cannot connect to the Docker daemon", "error during connect" or some error, and insted prints a bunch of info you are good to move on.
+Once you have installed Docker check if its active by running `docker info` in a terminal. If that does not print "Cannot connect to the Docker daemon", "error during connect" or some error, and instead prints a bunch of info you are good to move on.
 
 ### Setting up the repo 
 
@@ -47,12 +47,12 @@ cmake -B build
 cmake --build build
 cd ../
 ```
-- Run the program with `./Setup/build/hello`, and you should get `"Hello World"`.
+- Run the program with `./Setup/build/hello`, and you should get `Congratulations! You have completed the setup`.
 
 ### Re entering the container after first use.
 
 - Make sure Docker is active
-- Open VS Code and go to the Dev Containers extention. The contaner should be there. Click on the arrow to enter the container.
+- Open VS Code and go to the Dev Containers extension. The container should be there. Click on the arrow to enter the container.
 ![Dev Containers Extention Location](./assets/Dev%20Containers.png)
 
 ## Setting up Docker for CLI
