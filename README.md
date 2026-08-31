@@ -57,6 +57,36 @@ cd ../
 
 ## Setting up Docker for CLI
 
-Before specific instructions on how we use containers, install either [Docker](https://docs.docker.com/engine/install/) or [Podman](https://podman.io/docs/installation). 
+Before specific instructions on how we use containers, install either [Docker](https://docs.docker.com/engine/install/) or [Podman](https://podman.io/docs/installation).
+> **Note**: If using podman, you can replace `docker` with `podman` in all commands show below.
 
-smth using the `Setup` materials
+Once Docker is installed you can proceed with building the image, which is as simple as:
+```bash
+cd Setup
+docker build -t sentry:setup . 
+```
+Image names follow the `<repository>:<tag>` format, where tag specifies the version of the image.
+To verify the image was built successfully, run `docker image ls`, which lists all images on your system.
+
+Now that you have the image built, you can run it with the following command:
+```bash
+docker run -it --rm -v .:/ws -w /ws sentry:setup bash
+```
+Which should drop you right onto a bash shell inside the container with all the `Setup` files mounted at `/ws`. 
+
+To explain the run command briefly:
+- `-it`: Allocates a pseudo-TTY and forwards STDIN to provide an interactive shell.
+- `--rm`: Automatically deletes the container once you `exit`.
+- `-v .:/ws`: Mounts the current working directory on the host to `/ws` inside the container.
+- `-w /ws`: Sets `/ws` as the working directory once you enter the container.
+- `sentry:setup`: Specifies the image you are running.
+- `bash`: The program to execute on entry.
+> **Note for Fedora/RHEL**: If you are having permission issues with the mounted files, append `:Z` to the volume flag (`-v .:/ws:Z`) to properly label the SELinux security context.
+
+With the environment set up, you can configure, compile and run `Setup/main.cpp` using the following commands:
+```bash
+cmake -B build
+cmake --build build
+build/hello
+```
+The output of the commands should end with `Congratulations! You have completed the setup`. You can now exit the container by typing `exit`.
