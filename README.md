@@ -1,11 +1,11 @@
-# Sentry Intro
+# Welcome to the Sentry Intro project!
 
 ### Prerequisites
-Before embarking on this journey, ensure you comply with the following requirements:
-- Knowledge of how to open and use the terminal on your computer
-- VS Code or, alternatively, a text editor you are comfortable with
-- [Git installed on your system](https://git-scm.com/install/) 
-- Basic knowledge of C++ programming and compilation
+Before jumping in, make sure you have the basics ready:
+- **Terminal literacy**: Comfortable opening terminal and running basic commands.
+- **C++ basics**: Basic knowledge of C++ programming and compilation.
+- **Text Editor**: VS Code or, alternatively, a text editor you are comfortable with.
+- **Git**: [Installed on your system](https://git-scm.com/install/).
 
 ## Setting up SSH authentication
 
