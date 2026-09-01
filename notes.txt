@@ -1,0 +1,6 @@
+remap files
+missing udev rules
+missing dev container extension
+dont click no
+add user to docker group
+SElinux issues

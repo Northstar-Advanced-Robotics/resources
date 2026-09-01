@@ -1,0 +1,15 @@
+{
+  "name": "setup",
+  "build": {
+    "dockerfile": "${localWorkspaceFolder}/setup/Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+      ],
+    }
+  },
+  "workspaceMount": "type=bind,source=${localWorkspaceFolder}/setup,target=/ws",
+  "workspaceFolder": "/ws"
+}
