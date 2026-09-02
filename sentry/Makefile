@@ -20,9 +20,10 @@ shell: image-build ## Enter a shell inside container
 .PHONY: shell
 
 compile: ## Compile ROS2 package
-> $(call check_defined, PACKAGE, Usage: make compiled-debug PACKAGE=<your_package>)
-> @colcon build ${COLCON_BUILD_ARGS} --packages-up-to ${PACKAGE} 
-.PHONY: compile-debug
+> $(if ${PACKAGE} , \
+@colcon build ${COLCON_BUILD_ARGS} --packages-up-to ${PACKAGE}, \
+@colcon build ${COLCON_BUILD_ARGS})
+.PHONY: compile
 
 ${IMAGE_BUILD_STAMP}: Dockerfile
 > @${DOCKER_CMD} build -t ${IMAGE_NAME} -f Dockerfile 
