@@ -5,7 +5,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
     CMAKE_GENERATOR=Ninja
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git \
     xz-utils \
     curl \
     ninja-build \
@@ -14,4 +13,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     clangd \
     libboost-log-dev \
   && rm -rf /var/lib/apt/lists/*
-
