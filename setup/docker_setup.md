@@ -53,14 +53,14 @@ Pick the instructions for your OS:
 <details>
 <summary><b>Windows / macOS — clone into a named volume (recommended)</b></summary>
 
-- Install the [Dev Containers extension](vscode:extension/ms-vscode-remote.remote-containers) for VS Code (open this link in VS Code).
+- Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for VS Code.
 - Open the command palette with `Ctrl+Shift+P` (`Cmd+Shift+P` on Mac) and run:
 ```
 >Dev Containers: Clone Repository in Named Volume...
 ```
 
 
-- Paste the repo URL when prompted, then accept the default volume and folder names. VS Code will create the volume, clone into it, build the container, and open you inside it. This will take a few minutes.
+- Paste the repo URL when prompted, name the container Northstar if this is you first time creating a volume, otherwise select the already created one, then accept the default folder name. VS Code will create the volume, clone into it, build the container, and open you inside it. This will take a few minutes.
 - Your git credentials and SSH agent are forwarded automatically, so pushing and pulling from inside the container works as normal.
 
 > **Note**: The files live in the Docker volume, not on your host. You can only reach them through VS Code or a shell inside the container — host-side editors and GUI git clients will not see them. Deleting the volume (`docker volume rm`) permanently deletes anything you have not pushed, so commit and push before cleaning up containers.
