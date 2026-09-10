@@ -1,7 +1,9 @@
 FROM docker.io/ros:jazzy-ros-base
 
+# Add packages here
 RUN apt-get update && apt-get install -y --no-install-recommends \ 
         clangd \
+        bash-completion \
         clang && \
-    rm -r /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/*
 
