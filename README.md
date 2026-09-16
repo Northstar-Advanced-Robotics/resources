@@ -1,5 +1,12 @@
 # Welcome to Northstar resources!
 
+Here you will find documentation on how to setup our dev enviroments and everything else.
+
+Check out the instructions for each project:
+- Controls
+- Sentry
+- CV 
+
 <!-- Does this really make sense for resources repo-->
 <!-- ### Prerequisites -->
 <!-- Before jumping in, make sure you have the basics ready: -->
