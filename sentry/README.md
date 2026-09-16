@@ -1,3 +1,4 @@
 # Sentry
+To setup the for the sentry subproject, please follow the [docker setup](/setup/docker_setup.md) using the sentry-intro project and the [ssh setup](/setup/ssh.md).
 
-To get started with this project follow the [ssh setup guide](../setup/ssh.md), and [Docker setup guide](../setup/docker_setup.md) using the [Sentry repo](https://github.com/Northstar-Advanced-Robotics/northstar_sentry_ros.git) or [Sentry intro peoject](https://github.com/Northstar-Advanced-Robotics/sentry-intro.git).
+Once you have confirmed your dev environment is setup up correctly, you can start working on the [sentry-intro](https://github.com/Northstar-Advanced-Robotics/sentry-intro) project 
