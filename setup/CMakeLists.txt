@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(sentry-intro )
+project(sentry-intro)
 
 find_package(Boost REQUIRED COMPONENTS log)
 
